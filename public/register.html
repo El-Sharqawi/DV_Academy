@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - DV Academy</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>DV Academy Register</h1>
+        <p>Learn today, build your future</p>
+            
+
+        <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="courses.html">Courses</a></li>
+               <li><a href="courses/html-basics.html">HTML Basics</a></li>
+               <li><a href="register.html" aria-current="page" class="current-page">Register</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+     <main>
+        <div>
+            <h2>Student Registration Form</h2>
+            <p>Please fill out the form below to enroll in our technical training programs.</p>
+
+
+            <form action="#" method="post">
+                <!-- Personal Information -->
+                 <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div>
+                        <label for="fullname">Full Name (Required):</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                    </div>
+
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+201234567890">
+                    </div>
+
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+
+                    <div>
+                        <label for="website">Personal Website / Portfolio</label>
+                        <input type="url" id="website" name="website" placeholder="https://example.com">
+                    </div>                      
+                </fieldset>
+
+                
+                <!-- Course Choice -->
+                 <fieldset>
+                    <legend>Course & Session Choice</legend>
+
+                    <div>
+                        <label for="course-select">Select Course</label>
+                        
+                        <select name="course" id="course-select">
+                            <optgroup label="Beginner Level">
+                                <option value="html">HTML Basics</option>
+                                <option value="javascript">JavaScript Essentials</option>
+                            </optgroup>
+                            <optgroup label="Intermediate Level">
+                                <option value="css">CSS Essentials</option>
+                            </optgroup>
+                        </select>
+
+                    </div>
+
+                    <fieldset>
+                        <legend>Preferred Session</legend>
+                        <label><input type="radio" name="session" value="morning">Morning</label>
+                        <label><input type="radio" name="session" value="evening">Evening</label>
+                        <label><input type="radio" name="session" value="weekend">Weekend</label>
+                    </fieldset>
+                 </fieldset>
+
+                 <!-- Experience & Skills -->
+                  <fieldset>
+                    <legend>Experience & Details</legend>
+
+                <fieldset>
+                    <legend>Known Technologies</legend>
+
+                    <label>
+                        <input type="checkbox" name="tech" value="html">
+                        HTML
+                    </label>
+                
+                    <label>
+                        <input type="checkbox" name="tech" value="css">
+                        CSS
+                    </label>
+                
+                    <label>
+                        <input type="checkbox" name="tech" value="js">
+                        JavaScript
+                    </label>
+                </fieldset>
+
+                    <div>
+                        <label for="exp-years">Years of Experience:</label>
+                        <input type="number" id="exp-years" name="exp_years" min="0" max="10" value="0">
+                    </div>
+
+                    <div>
+                        <label for="skill-level">Self-Rated Level (1 to 10)</label>
+                        <input type="range" id="skill-level" name="skill_level" min="1" max="10">
+                    </div>
+
+                    
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" list="cities">
+                    
+                        <datalist id="cities">
+                            <option value="Cairo">
+                            <option value="Alexandria">
+                            <option value="Giza">
+                            <option value="Mansoura">
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="start-time">Preferred Start Time</label>
+                        <input type="time" id="start-time" name="start-time">
+                    </div>
+
+                    <div>
+                        <label for="cv">Upload CV (PDF only:)</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf">
+                    </div>
+                  </fieldset>
+
+                  <!-- System Fields -->
+                   <fieldset>
+                    <legend>System Details</legend>
+
+                    <div>
+                        <label for="fee">Course Fee ($):</label>
+                        <input type="text" id="fee" name="fee" value="150$" readonly>
+                    </div>
+
+                    <div>
+                        <label for="promo">Promo Code (coming soon):</label>
+                        <input type="text" id="promo" name="promo" disabled placeholder="Not available">
+                    </div>
+               
+                   </fieldset>
+
+                   <!-- Form Action Buttons -->
+                    <div>
+                        <button type="submit">Submit Registration</button>
+                        <button type="reset">Reset Form</button>
+                    </div>
+            </form>
+        </div>
+     </main>
+
+
+     <!-- Footer -->
+      <footer>
+        <p>&copy; 2026 DV Academy. All rights reserved</p>
+        <p>Contact: <a href="mailto:info@dvacademy.com" class="mail">info@dvacademy.com</a></p>
+      </footer>
+
+</body>
+</html>
